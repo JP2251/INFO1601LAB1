@@ -2,16 +2,88 @@
 <html lang="en">
 	<head>
 		<meta name="description" content="My first webpage">
-		<meta name="keywords" content="UWI, INFO 1601, Web development">
+		<meta name="keywords" content="UWI, INFO 1601, Web Development">
 		<title>My First Webpage!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css"
 	</head>
 	<body>
-		<h1>Heading 1</h1>
-		<p>This is my first website.</p>
-		<p>Welcome.</p>
-		<h2>Heading 2</h2>
-		<p>This webpage is part of a lab.</p>
+		<header>
+			<h1>This is My First Website</h1>
+		</header>
+		
+		<article>
+			<section>
+				<h2>Welcome</h2>
+			</section>
+			
+			<section>
+				<b>Bold</b> <br>
+				<strong>Strong Text</strong> <br>
+				<code>Code</code> <br>
+				<samp>This is Sample Text output from a computer program</samp>
+			</section>
+			
+			<section>
+				<kdb>Keyboard Input</kbd> <br>
+				<mark>This is Highlighted Text</mark> <br>
+				<em>This is Emphasized Text</em> <br>
+				<var>justAVariable</var> <br>
+				<cite>Citation text because plagiarism is bad</cite>
+			</section>
+			
+			<section>
+				<dfn>Definition</dfn> <br>
+				<u>Underlined</u> <br>
+				<s>Strikethrough</s> <br>
+				Text<sub>subscript</sub> <br>
+				Text<sup>superscript</sup>
+			</section>
+			
+			<section>
+				<p>This webpage is part of a lab</p>
+			</section>
+			
+			<section>
+				<figure>
+					<img src="https://lorempixel.com/200/200/cats" alt="a random cat">
+					<figcaption>Fig 1. A random cat</figcaption>
+				</figure>
+			</section>
+		
+			<section>
+				<details>
+					<summary>Hobbies</summary>
+					<section>
+						<h3>Indoor Hobbies</h3>
+						<ul>
+							<li>Programming</li>
+							<li>Studying</li>
+							<li>Memeing</li>
+						</ul>
+					</section>
+			
+					<section>
+						<h3>Outdoor Hobbies</h3>
+						<ol>
+							<li>Swimming</li>
+							<li>Football</li>
+							<li>Running</li>
+						</ol>
+					</section>
+				</details>
+			</section>
+			
+			<dialog id="mydialog">
+				This is a dialog
+				<a href="javascript:mydialog.removeAttribute('open')">close</a>
+			</dialog>
+			
+			<a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+				Open Dialog
+           	</a>
+           	
+		</article>
+		
 	</body>
 </html>
